@@ -1,4 +1,4 @@
-export const searchPhrase:string = "testowanie ";
+export const searchPhrase:string = "testowanie";
 export const searchResultTitle:string = 'Szukasz "testowanie"';
 export const incorrectSearchPhrase:string = "blablabla";
 export const notFoundMessage:string = "Nie znaleziono szukanej frazy";
