@@ -5,7 +5,7 @@ class ProductPage {
     }
 
     get addToCartBtn (){
-        return $("a#addToBasket_vfrdev_w");
+        return $("a#addToBasket_vtesap_w");
 
     
     }

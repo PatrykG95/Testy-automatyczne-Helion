@@ -1,4 +1,4 @@
-import { helionHomeUrl, searchProductUrl, shopcardUrl } from "../../config/pagesUrl";
+import { helionHomeUrl, searchProductUrl, shopCardUrl } from "../../config/pagesUrl";
 import { searchPhrase, alertMessage, deletedProductMessage } from "../../config/data";
 import SearchBarPage from "../../pages/components/SearchBarPage";
 import SearchResultPage from "../../pages/SearchResultPage";
@@ -29,7 +29,7 @@ describe ("E2E - Products", async () => {
     })
     it("Should click on add To Card Btn and verify alert message, price ", async() =>{
         await ProductPage.clickOnAddToCartBtn();
-        await expect(browser).toHaveUrlContaining(shopcardUrl); //sprawdza czy url zawiera chodz frazę ktora sie zgadza 
+        await expect(browser).toHaveUrlContaining(shopCardUrl); //sprawdza czy url zawiera chociaż frazę ktora sie zgadza 
         await expect(await CardPage.getSuccesAlertValue()).toContain(productTitle);
         await expect(await CardPage.getPrizeItem()).toContain(productPrice);
  
